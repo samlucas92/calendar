@@ -1,0 +1,44 @@
+
+  .calendar .body .timelinecell {
+    position: relative;
+    height: 20em;
+    border-right: 1px solid var(--border-color);
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--neutral-color);
+    transition: 0.25s ease-out;
+  }
+  
+  .calendar .body .timelinecell:hover {
+    background: var(--bg-color);
+    transition: 0.5s ease-out;
+  }
+
+  .calendar .body .timelinecell:last-child {
+    border-right: none;
+  }
+  
+  .calendar .body .timelinecell .number {
+    position: absolute;
+    font-size: 82.5%;
+    line-height: 1;
+    top: .75em;
+    right: .75em;
+    font-weight: 700;
+  }
+
+  .calendar .body .timelinecell .events-container {
+    position: absolute;
+    font-size: 82.5%;
+    line-height: 1;
+    top: .75em;
+    left: .75em;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .calendar .body .timelinecell .events-container .events .event .type {
+    width: 20px;
+    height: 20px;
+  }
